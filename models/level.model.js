@@ -110,7 +110,7 @@ Level.removeAll = result => {
         if (err) {
           console.log("error: ", err);
         }
-    
+
         console.log(`Truncate table levels`);
       });
 
