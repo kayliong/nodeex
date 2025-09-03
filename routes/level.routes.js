@@ -1,7 +1,7 @@
 module.exports = app => {
   const level = require("../controllers/level.controller.js");
 
-  // Create a new level board 
+  // Create a new level board
   app.post("/start-level", level.create);
 
   // Retrieve all levels

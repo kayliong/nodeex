@@ -22,7 +22,7 @@ exports.create = (req, res) => {
       message: "Content can not be empty!"
     });
   }
-  
+
   // manipulate to create board string
   var h;
   var i;
@@ -35,7 +35,7 @@ exports.create = (req, res) => {
 	  }
 	  board_arr.push(board_str);
   }
- 	
+
   // Create a Level
   const level = new Level({
     board: JSON.stringify(board_arr)
@@ -65,10 +65,10 @@ exports.findOne = (req, res) => {
 	          message: "Error retrieving level board with id " + req.params.levelId
 	        });
 	      }
-	    } 
-	    
-	    // TODO process the move 
-	    
+	    }
+
+	    // TODO process the move
+
 	    else res.send(data);
   });
 };
